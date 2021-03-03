@@ -1,0 +1,11 @@
+suhi@LAPTOP-VN4P1HHB:/mnt/c/ELTE/2/Java/HarmadikHazi$ javac game/utils/Vehicle.java 
+suhi@LAPTOP-VN4P1HHB:/mnt/c/ELTE/2/Java/HarmadikHazi$ javac game/player/Player.java 
+suhi@LAPTOP-VN4P1HHB:/mnt/c/ELTE/2/Java/HarmadikHazi$ javac game/main/Main.java
+suhi@LAPTOP-VN4P1HHB:/mnt/c/ELTE/2/Java/HarmadikHazi$ java game.main.Main
+Nev: Suhi
+IP: 168.1.1.1.
+Health: 100
+Rendszam: RAC-145
+Nev: Laura
+IP: 169.1.1.1
+Health: 100

@@ -1,31 +1,34 @@
-package player;
+package game.player;
 
-import utils.Vehicle;
-import Integer.toString;
+import game.utils.Vehicle;
 
-class Player {
+public class Player {
 
   private String _name;
   private String _ipAddress;
   private int _health;
   private Vehicle _vehicle;
 
-  Player(String newName, String ip, Vehicle veh) {
+  public Player(String newName, String ip, Vehicle veh) {
     this._name = newName;
     this._ipAddress = ip;
     this._vehicle = veh;
-  }
-  Player(String newName, String ip) {
-    this._name = newName;
-    this._ipAddress = ip;
+    this._health = 100;
   }
 
-  String toString() {
+  public Player(String newName, String ip) {
+    this._name = newName;
+    this._ipAddress = ip;
+    this._vehicle = null;
+    this._health = 100;
+  }
+
+  public String toString() {
     String fullString;
     if(this._vehicle != null)
-      fullString = this._name + this._ipAddress + Integer.toString(_health) + Integer.toString(this._vehicle._licensePlate);
+      fullString = "Nev: " + this._name + "\n" + "IP: " + this._ipAddress + "\n" + "Health: " + this._health + "\n" + "Rendszam: " + _vehicle.getLicensePlate();
     else 
-      fullString = this._name + this._ipAddress + Integer.toString(_health);
+      fullString = "Nev: " + this._name + "\n" + "IP: " + this._ipAddress + "\n" + "Health: " + this._health;
     return fullString;
   }
 }
