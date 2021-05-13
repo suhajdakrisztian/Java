@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.EmptyStackException;
 
 class Stack<Type> {
   private ArrayList<Type> _stackList;
@@ -49,7 +48,6 @@ public class kilencedikhazi {
     myStack.push(3);
     myStack.push(31);
     myStack.show();
-    //myStack.push(88);
     System.out.println(myStack.top());
     myStack.pop();
     myStack.push(99);
